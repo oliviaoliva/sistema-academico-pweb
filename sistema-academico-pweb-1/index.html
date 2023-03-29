@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>CADASTRO DE ALUNOS E DISCIPLINAS </h1>
+
+    Nome do Aluno: <input id="nome"> <br>
+    Idade do Aluno: <input id="idade"> <br>
+
+    <button onclick="alunoControlador.inserir()">Inserir</button> <br>
+    
+    <h2>ALUNOS: </h2>
+    <p id ='aluno' ></p>
+    <hr>
+
+    Codigo da Disciplina: <input id="codigoDis"> <br>
+    Nome da Disciplina: <input id="nomeDis"> <br>
+
+
+    <button onclick="disciplinaControlador.inserir()">Inserir</button> <br>
+
+    <h2>DISCIPLINAS: </h2>
+    <p id ='disciplina'></p>
+    <hr>
+    Nome do Aluno a ser matriculado: <input id="nomeExistente"> <br>
+    Código da Disciplina a matricular : <input id="codigoExistente"> <br>
+    <button onclick="disciplinaControlador.inserirAlunoNaDisciplina()">Inserir</button> <br>
+
+
+    <h2>CÓDIGO DA DISCIPLINA - ALUNO - NOME DISCIPLINA </h2>
+     <p id ='AlunoDisciplina'></p>
+
+     <script src="js/modelo/aluno.js"></script>
+     <script src="js/modelo/disciplina.js"></script>
+     <script src="js/repositorio/aluno-repositorio.js"></script>
+     <script src="js/repositorio/disciplina-repositorio.js"></script>
+     <script src="js/servico/aluno-servico.js"></script>
+     <script src="js/servico/disciplina-servico.js"></script>
+     <script src="js/controlador/aluno-controlador.js"></script>
+     <script src="js/controlador/disciplina-controlador.js"></script>
+     <script src="js/script.js"></script>
+</body>
+</html>
